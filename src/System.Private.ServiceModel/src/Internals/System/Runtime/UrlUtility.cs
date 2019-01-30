@@ -159,7 +159,7 @@ namespace System.Runtime
         {
             if (str != null && str.IndexOf(' ') >= 0)
             {
-                str = str.Replace(" ", "%20");
+                // str = str.Replace(" ", "%20"); DO NOT ENCODE SPACES
             }
             return str;
         }
